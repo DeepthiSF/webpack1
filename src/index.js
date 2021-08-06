@@ -9,13 +9,16 @@ no longer works because at the time of this writing, browsers
 out of the box do not support node modules. 
 Webpack can help us solve this problem  */ 
 
-// import { pascalCase } from "pascal-case";
+import { pascalCase } from "pascal-case";
+import newMessage from "./newFile.js"
 
 const title = document.getElementById("title");
 
-title.innerHTML = "the quick brown fox";
+//title.innerHTML = "the quick brown fox";
 
 
 //title.innerHTML = pascalCase("the quick brown fox");
+title.innerHTML = pascalCase(newMessage);
 
- 
+
+// index.js is the main file where u do all the execution and import all the other files that will have ur code and also other external modules that u import.
